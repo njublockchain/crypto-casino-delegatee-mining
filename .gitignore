@@ -1,0 +1,8 @@
+*.csv
+*.json
+*.edgelist
+*.pkl
+__pycache__/
+*.py[cod]
+*$py.class
+backup/

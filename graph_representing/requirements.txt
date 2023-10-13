@@ -1,0 +1,3 @@
+torch==2.0.1
+torch_geometric @ git+https://github.com/pyg-team/pytorch_geometric@663ebd55dfd379548bd1af326f727935e3b74ae5
+networkx

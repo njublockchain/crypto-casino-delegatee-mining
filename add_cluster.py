@@ -1,6 +1,6 @@
 from igraph import Graph
 
-file = ""
+file = "0xc2a81eb482cb4677136d8812cc6db6e0cb580883"
 
 class NodeAnalyzer:
     def __init__(self):

@@ -45,7 +45,7 @@ def calculate_zscore(DG, num_randomizations=1000):
     return z_scores
 
 # Read in a directed graph from a GraphML file
-filename = ""
+filename = "0xc2a81eb482cb4677136d8812cc6db6e0cb580883_complete"
 G = nx.read_graphml(f'{filename}.graphml')
 
 # Calculate z-scores and print results

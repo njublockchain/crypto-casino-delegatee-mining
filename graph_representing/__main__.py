@@ -3,6 +3,7 @@ import os.path as osp
 import networkx
 import pickle
 import json
+from sklearn.cluster import AgglomerativeClustering
 from typing import Any, Dict, Optional
 import torch
 import torch.nn.functional as F
@@ -135,7 +136,7 @@ for epoch in range(1, 151):
     auc, ap = test(test_data)
     print((f"Epoch: {epoch:03d}, Loss: {loss:.3f}, AUC: {auc:.3f}, " f"AP: {ap:.3f},"))
 
-
+# KMeans results
 @torch.no_grad()
 def get_result(data):
     model.eval()
@@ -152,6 +153,23 @@ def get_result(data):
         result[i] = int(pred[i])
 
     return result
+
+# # AHC results
+# @torch.no_grad()
+# def get_result(data):
+#     model.eval()
+#     z = model.encode(data.x, data.edge_index.int())
+    
+#     # Cluster embedded values using Agglomerative Clustering.
+#     ahc_input = z.cpu().numpy()
+#     ahc = AgglomerativeClustering(n_clusters=7)
+#     pred = ahc.fit_predict(ahc_input)
+
+#     result = {}
+#     for i in range(len(pred)):
+#         result[i] = int(pred[i])
+
+#     return result
 
 
 

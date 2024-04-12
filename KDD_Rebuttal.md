@@ -238,7 +238,7 @@ In line 318, we described edges in the form of vi, vj, f, t, where vi and vj rep
 
 The term $|\Delta L_{Total}|$ refers to the change in the total loss function. This change is used to determine algorithm convergence during iterations. The iteration process terminates if $|\Delta L_{Total}| < p$, indicating convergence to a stable state.
 
-**Q4** In line 564, how is similarity defined?（在第 564 行中，如何定义相似性？）自监督的损失函数的设计
+**Q4** In line 564, how is similarity defined?
 
 **Response** 
 
@@ -281,7 +281,7 @@ The results of role-level identification lay the foundation for understanding th
 
 We acknowledge that in some blockchain application scenarios like smart contract interactions, rich semantic information does exist. However, in the GambleFi scenario we studied, transactions mainly represent the flow of funds, with relatively simple semantics mainly representing monetary transfers related to gambling activities. Therefore, we initially decided to focus our analysis on the numerical features of transactions to precisely capture this flow of funds. In future work, we plan to explore methods that combine numerical and semantic analysis to provide more comprehensive network analysis.
 
-**W3** For readers to fully grasp the scope and significance of the experiments, it would be beneficial if the authors could provide detailed statistical information regarding the volume and characteristics of the data used, specifically for both Ethereum and TRON.（提供有关所用数据的数量和特征的详细统计信息，特别是针对以太坊和TRON的数据）
+**W3** For readers to fully grasp the scope and significance of the experiments, it would be beneficial if the authors could provide detailed statistical information regarding the volume and characteristics of the data used, specifically for both Ethereum and TRON.
 
 **Response** 
 
@@ -371,24 +371,23 @@ From advertisements on blockchain explorers like Etherscan, we observed gambling
 **Response**
 
 We further supplemented the following literature and research to support our views on the presence and impact of delegates in gambling games:
-"Delegation and Public Pressure in a Threshold Public Goods Game" found that delegation, coupled with public pressure, significantly impacts contributions in public goods games, which can be analogous to strategies in gambling games.
-“Detecting shill bidding in online English auctions” used observing bidding patterns in online auctions to detect the presence of shill bidding, an approach also applicable to identifying manipulative delegates in gambling games. 
-"Observable Contracts: Strategic Delegation and Cooperation" discussed how strategic delegation can be used by players to commit to certain actions in a game, providing insights into how delegates can influence game outcomes, such as in gambling.
+- "Delegation and Public Pressure in a Threshold Public Goods Game" found that delegation, coupled with public pressure, significantly impacts contributions in public goods games, which can be analogous to strategies in gambling games.
+- “Detecting shill bidding in online English auctions” used observing bidding patterns in online auctions to detect the presence of shill bidding, an approach also applicable to identifying manipulative delegates in gambling games. 
+- "Observable Contracts: Strategic Delegation and Cooperation" discussed how strategic delegation can be used by players to commit to certain actions in a game, providing insights into how delegates can influence game outcomes, such as in gambling.
 
 
 **W4** The authors' reliance on labeled data sourced directly from specific websites to construct their datasets raises concerns regarding the authenticity and reliability of the data. However, it's crucial to recognize that the labeled data obtained from these selected information sources inherently carries limitations and does not guarantee 100% reliability. In light of this, the authors should take proactive measures to enhance the reliability and effectiveness of their datasets. These measures are indispensable for upholding the credibility and integrity of the research outcomes.
 
 **Response** 
 
-For gambling DApp platforms, we not only referenced public information from specific platforms, but also directly accessed these platforms and observed their business operations to validate on-chain transaction data.
-For Ethereum labels, we obtained transaction and role information from the authoritative blockchain data source Etherscan. For TRON labels, similar to the TRON data source, labels were obtained through cooperation with law enforcement agencies and provided official authentication of roles. This validation from official institutions ensured the authority and reliability of role labels, as mentioned in Section 4.1.
+- For gambling DApp platforms, we not only referenced public information from specific platforms, but also directly accessed these platforms and observed their business operations to validate on-chain transaction data.
+- For Ethereum labels, we obtained transaction and role information from the authoritative blockchain data source Etherscan. For TRON labels, similar to the TRON data source, labels were obtained through cooperation with law enforcement agencies and provided official authentication of roles. This validation from official institutions ensured the authority and reliability of role labels, as mentioned in Section 4.1.
 
 **W5** In the experimental case studies of Ethereum, despite the authors' efforts to cluster participation roles in gambling games into distinct categories such as Airdrop promoters, Listing agents, Arbitrageurs, and Real gamblers, the results of the experiments failed to identify any Delegatees that contribute negatively to gambling games. This outcome inadvertently underscores the limitations of the author's approach, suggesting that merely clustering gambling participants and categorizing role behaviors does not facilitate the discovery of Delegatees. Thus, further exploration of alternative approaches is necessary to effectively uncover and address the presence of Delegates in gambling contexts.
 
 **Response** 
-(1) Both Arbitrageurs and Disguised gamblers we identified could negatively impact gambling games. While arbitrageurs earn profits from price differences across markets, manipulating games or exploiting information asymmetries for arbitrage could be harmful. Disguised gamblers under fake identities may directly hurt games through deception, manipulation or fraud. Moreover, identifying Delegatees was not just about finding direct harm, but indirect influence on participants through various means.
-
-(2) Our study was not limited to directly identifying casino participants. We analyzed on-chain entities related to the overall gambling platform ecosystem and gambling tokens, including gamblers, funders, promoters, etc. This crypto gambling transaction data aims to reveal a more holistic participant network and interactions within the gambling system.
+- Both Arbitrageurs and Disguised gamblers we identified could negatively impact gambling games. While arbitrageurs earn profits from price differences across markets, manipulating games or exploiting information asymmetries for arbitrage could be harmful. Disguised gamblers under fake identities may directly hurt games through deception, manipulation or fraud. Moreover, identifying Delegatees was not just about finding direct harm, but indirect influence on participants through various means.
+- Our study was not limited to directly identifying casino participants. We analyzed on-chain entities related to the overall gambling platform ecosystem and gambling tokens, including gamblers, funders, promoters, etc. This crypto gambling transaction data aims to reveal a more holistic participant network and interactions within the gambling system.
 
 
 **Q1** What efforts do the authors plan to take to address the mentioned cons?
@@ -407,4 +406,3 @@ Presentation Quality: 2: Average (it needs some effort to understand, but it sho
 Reproducibility: 1: Poor (no code/data are given and important information is missing)
 
 Reviewer Confidence: 4: The reviewer is certain that the evaluation is correct and very familiar with the relevant literature -->
-

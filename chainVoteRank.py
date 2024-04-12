@@ -108,7 +108,7 @@ class ChainVoteRank:
                     
 if __name__ == '__main__':
     # Run me
-    nodeFile = ""  
+    nodeFile = "/home/ta/gambling/crypto-casino-delegatee-mining/dataset/Ethereum case dataset/0xc2a81eb482cb4677136d8812cc6db6e0cb580883.txt"  
     n = 274  
     discount = 0.6  
     topK = 274

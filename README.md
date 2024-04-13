@@ -9,6 +9,11 @@ Our proposed CCDM method not only identifies two fundamental roles, namely excha
 2. ready the python env `conda create -n py39 python=3.9 && conda activate py39`
 3. install the dependencies `pip install -r requirements.txt`
 
+## Parameter Analysis:
+Attri-GAT output feature dimension (out_channels) is set to 8. LeakyReLU negative slope is 0.2. Number of attention heads (heads) is 4. Dropout rate is 0.5. Learning rate is 0.001. Training epochs are 100. Batch size is 32. Maximum number of clusters explored during clustering (max_clusters) is 20. 
+
+For the LSTM model, the hidden layer size (hidden_size) is set to 64. The maximum sequence length (max_seq_length), used for padding or truncating each node's time series, is set to 5.
+
 
 The CCDM framework primarily includes two components: ChainVoteRank and Hidden Role Identification.
 ## ChainVoteRank

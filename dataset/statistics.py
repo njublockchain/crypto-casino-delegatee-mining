@@ -45,7 +45,7 @@ graph_files = [
 for gexf_file in graph_files:
     calculate_graph_metrics(gexf_file)
 
-给定一gexf图文件，获取边“block_number”属性的全网最大值和最小值
+# 给定一gexf图文件，获取边“block_number”属性的全网最大值和最小值
 
 # import networkx as nx
 

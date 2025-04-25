@@ -1,4 +1,4 @@
-# CCDM: Crypto Casino Delegatee Miner
+# Gamblers or Delegatees: Identifying Hidden Participant Roles in Crypto Casinos
 
 
 ## Ready
